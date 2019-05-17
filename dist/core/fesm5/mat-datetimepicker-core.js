@@ -18,7 +18,7 @@ import { InjectionToken, Inject, Injectable, Optional, NgModule, ChangeDetection
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @abstract
@@ -438,27 +438,35 @@ DatetimeAdapter = /** @class */ (function (_super) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var MAT_DATETIME_FORMATS = new InjectionToken("mat-datetime-formats");
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var ɵ0 = function (i) { return String(i); };
+var ɵ0 = /**
+ * @param {?} i
+ * @return {?}
+ */
+function (i) { return String(i); };
 /**
  * The default hour names to use if Intl API is not available.
  * @type {?}
  */
-var DEFAULT_HOUR_NAMES = range(24, ɵ0);
-var ɵ1 = function (i) { return String(i); };
+var DEFAULT_HOUR_NAMES = range(24, (ɵ0));
+var ɵ1 = /**
+ * @param {?} i
+ * @return {?}
+ */
+function (i) { return String(i); };
 /**
  * The default minute names to use if Intl API is not available.
  * @type {?}
  */
-var DEFAULT_MINUTE_NAMES = range(60, ɵ1);
+var DEFAULT_MINUTE_NAMES = range(60, (ɵ1));
 /**
  * @template T
  * @param {?} length
@@ -790,7 +798,7 @@ var NativeDatetimeAdapter = /** @class */ (function (_super) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var MAT_NATIVE_DATETIME_FORMATS = {
@@ -809,7 +817,7 @@ var MAT_NATIVE_DATETIME_FORMATS = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // tslint:disable max-classes-per-file
 var NativeDatetimeModule = /** @class */ (function () {
@@ -846,12 +854,12 @@ var MatNativeDatetimeModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * This animation fades in the background color and text content of the
@@ -886,7 +894,7 @@ var slideCalendar = trigger("slideCalendar", [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * \@docs-private
@@ -901,7 +909,7 @@ function createMissingDateImplError(provider) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @enum {number} */
 var MatDatetimepickerFilterType = {
@@ -913,7 +921,7 @@ MatDatetimepickerFilterType[MatDatetimepickerFilterType.MINUTE] = 'MINUTE';
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * A calendar that is used as part of the datepicker.
@@ -942,12 +950,16 @@ var MatDatetimepickerCalendar = /** @class */ (function () {
         /**
          * Date filter for the month and year views.
          */
-        this._dateFilterForViews = function (date) {
+        this._dateFilterForViews = (/**
+         * @param {?} date
+         * @return {?}
+         */
+        function (date) {
             return !!date &&
                 (!_this.dateFilter || _this.dateFilter(date, MatDatetimepickerFilterType.DATE)) &&
                 (!_this.minDate || _this._adapter.compareDate(date, _this.minDate) >= 0) &&
                 (!_this.maxDate || _this._adapter.compareDate(date, _this.maxDate) <= 0);
-        };
+        });
         /**
          * Whether the calendar is in month view.
          */
@@ -959,7 +971,10 @@ var MatDatetimepickerCalendar = /** @class */ (function () {
         if (!this._dateFormats) {
             throw createMissingDateImplError("MAT_DATETIME_FORMATS");
         }
-        this._intlChanges = _intl.changes.subscribe(function () { return changeDetectorRef.markForCheck(); });
+        this._intlChanges = _intl.changes.subscribe((/**
+         * @return {?}
+         */
+        function () { return changeDetectorRef.markForCheck(); }));
     }
     Object.defineProperty(MatDatetimepickerCalendar.prototype, "startAt", {
         /** A date representing the period (month or year) to start the calendar in. */
@@ -1369,11 +1384,17 @@ var MatDatetimepickerCalendar = /** @class */ (function () {
      */
     function () {
         var _this = this;
-        this._ngZone.runOutsideAngular(function () {
-            _this._ngZone.onStable.asObservable().pipe(first()).subscribe(function () {
+        this._ngZone.runOutsideAngular((/**
+         * @return {?}
+         */
+        function () {
+            _this._ngZone.onStable.asObservable().pipe(first()).subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this._elementRef.nativeElement.focus();
-            });
-        });
+            }));
+        }));
     };
     /** Whether the two dates represent the same view in the current view mode (month or year). */
     /**
@@ -1671,7 +1692,7 @@ var MatDatetimepickerCalendar = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * An internal class that represents the data corresponding to a single calendar cell.
@@ -1788,7 +1809,7 @@ var MatDatetimepickerCalendarBody = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var CLOCK_RADIUS = 50;
@@ -1826,12 +1847,19 @@ var MatDatetimepickerClock = /** @class */ (function () {
          * Whether the clock is in hour view.
          */
         this._hourView = true;
-        this.mouseMoveListener = function (event) {
+        this.mouseMoveListener = (/**
+         * @param {?} event
+         * @return {?}
+         */
+        function (event) {
             _this._handleMousemove(event);
-        };
-        this.mouseUpListener = function () {
+        });
+        this.mouseUpListener = (/**
+         * @return {?}
+         */
+        function () {
             _this._handleMouseup();
-        };
+        });
     }
     Object.defineProperty(MatDatetimepickerClock.prototype, "activeDate", {
         /**
@@ -2215,7 +2243,7 @@ var MatDatetimepickerClock = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Used to generate a unique ID for each datepicker instance.
@@ -2559,7 +2587,11 @@ var MatDatetimepicker = /** @class */ (function () {
         }
         this._datepickerInput = input;
         this._inputSubscription =
-            this._datepickerInput._valueChange.subscribe(function (value) { return _this._selected = value; });
+            this._datepickerInput._valueChange.subscribe((/**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) { return _this._selected = value; }));
     };
     /** Open the calendar. */
     /**
@@ -2609,7 +2641,10 @@ var MatDatetimepicker = /** @class */ (function () {
             this._calendarPortal.detach();
         }
         /** @type {?} */
-        var completeClose = function () {
+        var completeClose = (/**
+         * @return {?}
+         */
+        function () {
             // The `_opened` could've been reset already if
             // we got two events in quick succession.
             if (_this.opened) {
@@ -2617,7 +2652,7 @@ var MatDatetimepicker = /** @class */ (function () {
                 _this.closedStream.emit();
                 _this._focusedElementBeforeOpen = null;
             }
-        };
+        });
         if (this._focusedElementBeforeOpen &&
             typeof this._focusedElementBeforeOpen.focus === "function") {
             // Because IE moves focus asynchronously, we can't count on it being restored before we've
@@ -2650,7 +2685,10 @@ var MatDatetimepicker = /** @class */ (function () {
             viewContainerRef: this._viewContainerRef,
             panelClass: "mat-datetimepicker-dialog"
         });
-        this._dialogRef.afterClosed().subscribe(function () { return _this.close(); });
+        this._dialogRef.afterClosed().subscribe((/**
+         * @return {?}
+         */
+        function () { return _this.close(); }));
         this._dialogRef.componentInstance.datetimepicker = this;
     };
     /** Open the calendar as a popup. */
@@ -2677,11 +2715,17 @@ var MatDatetimepicker = /** @class */ (function () {
             var componentRef = this._popupRef.attach(this._calendarPortal);
             componentRef.instance.datetimepicker = this;
             // Update the position once the calendar has rendered.
-            this._ngZone.onStable.asObservable().pipe(first()).subscribe(function () {
+            this._ngZone.onStable.asObservable().pipe(first()).subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this._popupRef.updatePosition();
-            });
+            }));
         }
-        this._popupRef.backdropClick().subscribe(function () { return _this.close(); });
+        this._popupRef.backdropClick().subscribe((/**
+         * @return {?}
+         */
+        function () { return _this.close(); }));
     };
     /** Create the popup. */
     /**
@@ -2791,19 +2835,25 @@ var MatDatetimepicker = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // tslint:disable no-use-before-declare
 /** @type {?} */
 var MAT_DATETIMEPICKER_VALUE_ACCESSOR = {
     provide: NG_VALUE_ACCESSOR,
-    useExisting: forwardRef(function () { return MatDatetimepickerInput; }),
+    useExisting: forwardRef((/**
+     * @return {?}
+     */
+    function () { return MatDatetimepickerInput; })),
     multi: true
 };
 /** @type {?} */
 var MAT_DATETIMEPICKER_VALIDATORS = {
     provide: NG_VALIDATORS,
-    useExisting: forwardRef(function () { return MatDatetimepickerInput; }),
+    useExisting: forwardRef((/**
+     * @return {?}
+     */
+    function () { return MatDatetimepickerInput; })),
     multi: true
 };
 /**
@@ -2853,50 +2903,74 @@ var MatDatetimepickerInput = /** @class */ (function () {
          * Emits when the disabled state has changed
          */
         this._disabledChange = new EventEmitter();
-        this._onTouched = function () {
-        };
-        this._cvaOnChange = function () {
-        };
-        this._validatorOnChange = function () {
-        };
+        this._onTouched = (/**
+         * @return {?}
+         */
+        function () {
+        });
+        this._cvaOnChange = (/**
+         * @return {?}
+         */
+        function () {
+        });
+        this._validatorOnChange = (/**
+         * @return {?}
+         */
+        function () {
+        });
         this._datepickerSubscription = Subscription.EMPTY;
         this._localeSubscription = Subscription.EMPTY;
         /**
          * The form control validator for whether the input parses.
          */
-        this._parseValidator = function () {
+        this._parseValidator = (/**
+         * @return {?}
+         */
+        function () {
             return _this._lastValueValid ?
                 null : { "matDatepickerParse": { "text": _this._elementRef.nativeElement.value } };
-        };
+        });
         /**
          * The form control validator for the min date.
          */
-        this._minValidator = function (control) {
+        this._minValidator = (/**
+         * @param {?} control
+         * @return {?}
+         */
+        function (control) {
             /** @type {?} */
             var controlValue = _this._dateAdapter.getValidDateOrNull(_this._dateAdapter.deserialize(control.value));
             return (!_this.min || !controlValue ||
                 _this._dateAdapter.compareDatetime(_this.min, controlValue) <= 0) ?
                 null : { "matDatepickerMin": { "min": _this.min, "actual": controlValue } };
-        };
+        });
         /**
          * The form control validator for the max date.
          */
-        this._maxValidator = function (control) {
+        this._maxValidator = (/**
+         * @param {?} control
+         * @return {?}
+         */
+        function (control) {
             /** @type {?} */
             var controlValue = _this._dateAdapter.getValidDateOrNull(_this._dateAdapter.deserialize(control.value));
             return (!_this.max || !controlValue ||
                 _this._dateAdapter.compareDatetime(_this.max, controlValue) >= 0) ?
                 null : { "matDatepickerMax": { "max": _this.max, "actual": controlValue } };
-        };
+        });
         /**
          * The form control validator for the date filter.
          */
-        this._filterValidator = function (control) {
+        this._filterValidator = (/**
+         * @param {?} control
+         * @return {?}
+         */
+        function (control) {
             /** @type {?} */
             var controlValue = _this._dateAdapter.getValidDateOrNull(_this._dateAdapter.deserialize(control.value));
             return !_this._dateFilter || !controlValue || _this._dateFilter(controlValue, MatDatetimepickerFilterType.DATE) ?
                 null : { "matDatepickerFilter": true };
-        };
+        });
         /**
          * The combined form control validator for this input.
          */
@@ -2912,9 +2986,12 @@ var MatDatetimepickerInput = /** @class */ (function () {
             throw createMissingDateImplError("MAT_DATETIME_FORMATS");
         }
         // Update the displayed date when the locale changes.
-        this._localeSubscription = _dateAdapter.localeChanges.subscribe(function () {
+        this._localeSubscription = _dateAdapter.localeChanges.subscribe((/**
+         * @return {?}
+         */
+        function () {
             _this.value = _this.value;
-        });
+        }));
     }
     Object.defineProperty(MatDatetimepickerInput.prototype, "matDatetimepicker", {
         /** The datepicker that this input is associated with. */
@@ -2980,11 +3057,14 @@ var MatDatetimepickerInput = /** @class */ (function () {
             this._value = value;
             this._formatValue(value);
             // use timeout to ensure the datetimepicker is instantiated and we get the correct format
-            setTimeout(function () {
+            setTimeout((/**
+             * @return {?}
+             */
+            function () {
                 if (!_this._dateAdapter.sameDatetime(oldDate, value)) {
                     _this._valueChange.emit(value);
                 }
-            });
+            }));
         },
         enumerable: true,
         configurable: true
@@ -3113,13 +3193,17 @@ var MatDatetimepickerInput = /** @class */ (function () {
         var _this = this;
         if (this._datepicker) {
             // tslint:disable-next-line deprecation
-            this._datepickerSubscription = this._datepicker.selectedChanged.subscribe(function (selected) {
+            this._datepickerSubscription = this._datepicker.selectedChanged.subscribe((/**
+             * @param {?} selected
+             * @return {?}
+             */
+            function (selected) {
                 _this.value = selected;
                 _this._cvaOnChange(selected);
                 _this._onTouched();
                 _this.dateInput.emit(new MatDatetimepickerInputEvent(_this, _this._elementRef.nativeElement));
                 _this.dateChange.emit(new MatDatetimepickerInputEvent(_this, _this._elementRef.nativeElement));
-            });
+            }));
         }
     };
     /**
@@ -3351,7 +3435,7 @@ var MatDatetimepickerInput = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @template D
@@ -3443,7 +3527,10 @@ var MatDatetimepickerToggle = /** @class */ (function () {
             this.datetimepicker._datepickerInput._disabledChange : of();
         this._stateChanges.unsubscribe();
         this._stateChanges = merge(this._intl.changes, datepickerDisabled, inputDisabled)
-            .subscribe(function () { return _this._changeDetectorRef.markForCheck(); });
+            .subscribe((/**
+         * @return {?}
+         */
+        function () { return _this._changeDetectorRef.markForCheck(); }));
     };
     MatDatetimepickerToggle.decorators = [
         { type: Component, args: [{
@@ -3472,7 +3559,7 @@ var MatDatetimepickerToggle = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 var DAYS_PER_WEEK = 7;
@@ -3505,9 +3592,14 @@ var MatDatetimepickerMonthView = /** @class */ (function () {
         var longWeekdays = this._adapter.getDayOfWeekNames("long");
         // Rotate the labels for days of the week based on the configured first day of the week.
         /** @type {?} */
-        var weekdays = longWeekdays.map(function (long, i) {
+        var weekdays = longWeekdays.map((/**
+         * @param {?} long
+         * @param {?} i
+         * @return {?}
+         */
+        function (long, i) {
             return { long: long, narrow: narrowWeekdays[i] };
-        });
+        }));
         this._weekdays = weekdays.slice(firstDayOfWeek).concat(weekdays.slice(0, firstDayOfWeek));
         this._activeDate = this._adapter.today();
     }
@@ -3715,7 +3807,7 @@ var MatDatetimepickerMonthView = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * An internal component used to display a single year in the datepicker.
@@ -3835,7 +3927,15 @@ var MatDatetimepickerYearView = /** @class */ (function () {
         /** @type {?} */
         var monthNames = this._adapter.getMonthNames("short");
         // First row of months only contains 5 elements so we can fit the year label on the same row.
-        this._months = [[0, 1, 2, 3, 4], [5, 6, 7, 8, 9, 10, 11]].map(function (row) { return row.map(function (month) { return _this._createCellForMonth(month, monthNames[month]); }); });
+        this._months = [[0, 1, 2, 3, 4], [5, 6, 7, 8, 9, 10, 11]].map((/**
+         * @param {?} row
+         * @return {?}
+         */
+        function (row) { return row.map((/**
+         * @param {?} month
+         * @return {?}
+         */
+        function (month) { return _this._createCellForMonth(month, monthNames[month]); })); }));
     };
     /**
      * Gets the month in this year that the given Date falls on.
@@ -3952,7 +4052,7 @@ var MatDatetimepickerYearView = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var MatDatetimepickerModule = /** @class */ (function () {
     function MatDatetimepickerModule() {
@@ -3999,17 +4099,17 @@ var MatDatetimepickerModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NativeDatetimeModule, MatNativeDatetimeModule, DatetimeAdapter, MAT_DATETIME_FORMATS, NativeDatetimeAdapter, MAT_NATIVE_DATETIME_FORMATS, MatDatetimepickerModule, MatDatetimepickerCalendar, MatDatetimepickerCalendarCell, MatDatetimepickerCalendarBody, MatDatetimepickerContent, MatDatetimepicker, MatDatetimepickerFilterType, MAT_DATETIMEPICKER_VALUE_ACCESSOR, MAT_DATETIMEPICKER_VALIDATORS, MatDatetimepickerInputEvent, MatDatetimepickerInput, MatDatetimepickerToggle, MatDatetimepickerMonthView, MatDatetimepickerYearView, MatDatetimepickerClock as ɵb, slideCalendar as ɵa };

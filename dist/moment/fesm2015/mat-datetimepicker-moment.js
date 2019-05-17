@@ -6,7 +6,7 @@ import * as moment_ from 'moment';
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const moment = moment_;
@@ -45,9 +45,21 @@ class MomentDatetimeAdapter extends DatetimeAdapter {
             firstDayOfWeek: momentLocaleData.firstDayOfWeek(),
             longMonths: momentLocaleData.months(),
             shortMonths: momentLocaleData.monthsShort(),
-            dates: range(31, (i) => super.createDate(2017, 0, i + 1).format("D")),
-            hours: range(24, (i) => this.createDatetime(2017, 0, 1, i, 0).format("H")),
-            minutes: range(60, (i) => this.createDatetime(2017, 0, 1, 1, i).format("m")),
+            dates: range(31, (/**
+             * @param {?} i
+             * @return {?}
+             */
+            (i) => super.createDate(2017, 0, i + 1).format("D"))),
+            hours: range(24, (/**
+             * @param {?} i
+             * @return {?}
+             */
+            (i) => this.createDatetime(2017, 0, 1, i, 0).format("H"))),
+            minutes: range(60, (/**
+             * @param {?} i
+             * @return {?}
+             */
+            (i) => this.createDatetime(2017, 0, 1, 1, i).format("m"))),
             longDaysOfWeek: momentLocaleData.weekdays(),
             shortDaysOfWeek: momentLocaleData.weekdaysShort(),
             narrowDaysOfWeek: momentLocaleData.weekdaysMin()
@@ -171,7 +183,7 @@ MomentDatetimeAdapter.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const MAT_MOMENT_DATETIME_FORMATS = {
@@ -195,7 +207,7 @@ const MAT_MOMENT_DATETIME_FORMATS = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class MomentDatetimeModule {
 }
@@ -222,12 +234,12 @@ MatMomentDatetimeModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { MomentDatetimeModule, MatMomentDatetimeModule, MomentDatetimeAdapter, MAT_MOMENT_DATETIME_FORMATS };

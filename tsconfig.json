@@ -30,6 +30,12 @@
       ],
       "@mat-datetimepicker/moment/*": [
         "dist/moment/*"
+      ],
+      "@mat-datetimepicker/fuse": [
+        "dist/fuse"
+      ],
+      "@mat-datetimepicker/fuse/*": [
+        "dist/fuse/*"
       ]
     }
   }
