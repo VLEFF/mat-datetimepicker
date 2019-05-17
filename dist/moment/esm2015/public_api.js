@@ -1,0 +1,8 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+export { MomentDatetimeModule, MatMomentDatetimeModule, MomentDatetimeAdapter, MAT_MOMENT_DATETIME_FORMATS } from "./adapter/index";
+export {} from "./adapter/moment-datetime-adapter";
+export {} from "./adapter/moment-datetime-formats";
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljX2FwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0BtYXQtZGF0ZXRpbWVwaWNrZXIvbW9tZW50LyIsInNvdXJjZXMiOlsicHVibGljX2FwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7O0FBQUEsa0hBQWMsaUJBQWlCLENBQUM7QUFDaEMsZUFBYyxtQ0FBbUMsQ0FBQztBQUNsRCxlQUFjLG1DQUFtQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0ICogZnJvbSBcIi4vYWRhcHRlci9pbmRleFwiO1xuZXhwb3J0ICogZnJvbSBcIi4vYWRhcHRlci9tb21lbnQtZGF0ZXRpbWUtYWRhcHRlclwiO1xuZXhwb3J0ICogZnJvbSBcIi4vYWRhcHRlci9tb21lbnQtZGF0ZXRpbWUtZm9ybWF0c1wiO1xuIl19
