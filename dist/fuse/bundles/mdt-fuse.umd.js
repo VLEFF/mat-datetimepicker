@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core')) :
-    typeof define === 'function' && define.amd ? define('@mat-datetimepicker/fuse', ['exports', '@angular/core'], factory) :
-    (factory((global['mat-datetimepicker'] = global['mat-datetimepicker'] || {}, global['mat-datetimepicker'].fuse = {}),global.ng.core));
+    typeof define === 'function' && define.amd ? define('@mdt/fuse', ['exports', '@angular/core'], factory) :
+    (factory((global.mdt = global.mdt || {}, global.mdt.fuse = {}),global.ng.core));
 }(this, (function (exports,core) { 'use strict';
 
     /**
@@ -33,4 +33,4 @@
 
 })));
 
-//# sourceMappingURL=mat-datetimepicker-fuse.umd.js.map
+//# sourceMappingURL=mdt-fuse.umd.js.map

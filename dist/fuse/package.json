@@ -1,22 +1,19 @@
 {
-  "name": "@mat-datetimepicker/fuse",
-  "version": "3.0.0-beta.0",
-  "repository": "https://github.com/kuhnroyal/mat-datetimepicker.git",
-  "author": "PL <kuhnroyal@gmail.com>",
-  "license": "MIT",
+  "name": "@mdt/fuse",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^7.1.0",
     "@angular/core": "^7.1.0"
   },
-  "main": "bundles/mat-datetimepicker-fuse.umd.js",
-  "module": "fesm5/mat-datetimepicker-fuse.js",
-  "es2015": "fesm2015/mat-datetimepicker-fuse.js",
-  "esm5": "esm5/mat-datetimepicker-fuse.js",
-  "esm2015": "esm2015/mat-datetimepicker-fuse.js",
-  "fesm5": "fesm5/mat-datetimepicker-fuse.js",
-  "fesm2015": "fesm2015/mat-datetimepicker-fuse.js",
-  "typings": "mat-datetimepicker-fuse.d.ts",
-  "metadata": "mat-datetimepicker-fuse.metadata.json",
+  "main": "bundles/mdt-fuse.umd.js",
+  "module": "fesm5/mdt-fuse.js",
+  "es2015": "fesm2015/mdt-fuse.js",
+  "esm5": "esm5/mdt-fuse.js",
+  "esm2015": "esm2015/mdt-fuse.js",
+  "fesm5": "fesm5/mdt-fuse.js",
+  "fesm2015": "fesm2015/mdt-fuse.js",
+  "typings": "mdt-fuse.d.ts",
+  "metadata": "mdt-fuse.metadata.json",
   "sideEffects": false,
   "dependencies": {
     "tslib": "^1.9.0"
