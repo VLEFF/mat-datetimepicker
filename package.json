@@ -8,7 +8,7 @@
     "start:prod": "ng serve --prod",
     "build": "yarn build:lib && ng build",
     "build:lib": "yarn build:lib/fuse",
-    "build:lib/fuse": "ng build fuse && copy-files-from-to projects/fuse/copy-files.json",
+    "build:lib/fuse": "ng build fuse && copy-files-from-to src/fuse/copy-files.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

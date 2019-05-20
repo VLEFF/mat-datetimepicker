@@ -82,7 +82,7 @@ Parsing does not work with the native adapter because the Intl.DateTimeFormat AP
     }
   ]
 ```
-@see defaults in [native-datetime-formats.ts](projects/core/src/adapter/native-datetime-formats.ts) \
+@see defaults in [native-datetime-formats.ts](src/core/src/adapter/native-datetime-formats.ts) \
 @see Intl.DateTimeFormat API [documentation](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)
 
 ### Moment
@@ -111,7 +111,7 @@ Parsing does not work with the native adapter because the Intl.DateTimeFormat AP
     }
   ]
 ```
-@see defaults in [moment-datetime-formats.ts](projects/moment/src/adapter/moment-datetime-formats.ts) \
+@see defaults in [moment-datetime-formats.ts](src/moment/src/adapter/moment-datetime-formats.ts) \
 @see moment.js [documentation](https://momentjs.com/docs/#/displaying/)
 
 ## Theming
