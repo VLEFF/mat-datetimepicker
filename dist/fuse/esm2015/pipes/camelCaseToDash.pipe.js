@@ -1,0 +1,17 @@
+import { Pipe } from '@angular/core';
+export class CamelCaseToDashPipe {
+    /**
+     * Transform
+     *
+     * @param {string} value
+     * @param {any[]} args
+     * @returns {string}
+     */
+    transform(value, args = []) {
+        return value ? String(value).replace(/([A-Z])/g, (g) => `-${g[0].toLowerCase()}`) : '';
+    }
+}
+CamelCaseToDashPipe.decorators = [
+    { type: Pipe, args: [{ name: 'camelCaseToDash' },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2FtZWxDYXNlVG9EYXNoLnBpcGUuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AbWR0L2Z1c2UvIiwic291cmNlcyI6WyJwaXBlcy9jYW1lbENhc2VUb0Rhc2gucGlwZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsSUFBSSxFQUFpQixNQUFNLGVBQWUsQ0FBQztBQUdwRCxNQUFNLE9BQU8sbUJBQW1CO0lBRTVCOzs7Ozs7T0FNRztJQUNILFNBQVMsQ0FBQyxLQUFhLEVBQUUsT0FBYyxFQUFFO1FBRXJDLE9BQU8sS0FBSyxDQUFDLENBQUMsQ0FBQyxNQUFNLENBQUMsS0FBSyxDQUFDLENBQUMsT0FBTyxDQUFDLFVBQVUsRUFBRSxDQUFDLENBQUMsRUFBRSxFQUFFLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsV0FBVyxFQUFFLEVBQUUsQ0FBQyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUM7SUFDM0YsQ0FBQzs7O1lBYkosSUFBSSxTQUFDLEVBQUMsSUFBSSxFQUFFLGlCQUFpQixFQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUGlwZSwgUGlwZVRyYW5zZm9ybSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5AUGlwZSh7bmFtZTogJ2NhbWVsQ2FzZVRvRGFzaCd9KVxuZXhwb3J0IGNsYXNzIENhbWVsQ2FzZVRvRGFzaFBpcGUgaW1wbGVtZW50cyBQaXBlVHJhbnNmb3JtXG57XG4gICAgLyoqXG4gICAgICogVHJhbnNmb3JtXG4gICAgICpcbiAgICAgKiBAcGFyYW0ge3N0cmluZ30gdmFsdWVcbiAgICAgKiBAcGFyYW0ge2FueVtdfSBhcmdzXG4gICAgICogQHJldHVybnMge3N0cmluZ31cbiAgICAgKi9cbiAgICB0cmFuc2Zvcm0odmFsdWU6IHN0cmluZywgYXJnczogYW55W10gPSBbXSk6IHN0cmluZ1xuICAgIHtcbiAgICAgICAgcmV0dXJuIHZhbHVlID8gU3RyaW5nKHZhbHVlKS5yZXBsYWNlKC8oW0EtWl0pL2csIChnKSA9PiBgLSR7Z1swXS50b0xvd2VyQ2FzZSgpfWApIDogJyc7XG4gICAgfVxufVxuIl19
