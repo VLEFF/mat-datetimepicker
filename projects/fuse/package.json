@@ -1,0 +1,11 @@
+{
+  "name": "@mat-datetimepicker/fuse",
+  "version": "3.0.0-beta.0",
+  "repository": "https://github.com/kuhnroyal/mat-datetimepicker.git",
+  "author": "PL <kuhnroyal@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^7.1.0",
+    "@angular/core": "^7.1.0"
+  }
+}
